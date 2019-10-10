@@ -1,0 +1,547 @@
+\documentclass{tufte-handout}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+%\documentclass{article}
+\usepackage{graphicx}
+%\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+% Prints a trailing space in a smart way.
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\newcommand{\tthdump}[1]{#1}
+\usepackage{makeidx}
+\usepackage{tabularx}
+
+%\makeindex
+
+
+
+
+\title{Buy On Gap trading report - S\&P 500}
+
+\date{ 23 Oct 2013 }
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+
+\begin{document}
+\maketitle
+
+%\SweaveOpts{concordance=TRUE}
+%\setkeys{Gin}{width=1.1\marginparwidth} %% Sweave
+
+\section{Trade execution}
+\subsection{Order executed}
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrrrrrrr|r}
+  \hline
+ & Symbol & B.AvgPrc & B.Qty & S.AvgPrc & S.Qty & Profit & Comm. & Return \% & Closing Price \\ 
+  \hline
+1 & BRCM & 25.00 & 414 & 26.32 & 414 & 542.15 & 4.33 & 5.24 & 26.37 \\ 
+  2 & CLF & 23.32 & 442 & 23.40 & 442 & 30.34 & 4.60 & 0.29 & 23.43 \\ 
+  3 & EMC & 23.41 & 442 & 23.63 & 442 & 92.64 & 4.60 & 0.89 & 23.66 \\ 
+  4 & LSI & 7.78 & 1331 & 7.70 & 1331 & -119.97 & 13.49 & -1.16 & 7.71 \\ 
+  5 & NBR & 17.20 & 599 & 16.84 & 599 & -221.81 & 6.17 & -2.15 & 16.87 \\ 
+  6 & NLSN & 38.00 & 273 & 38.25 & 273 & 65.34 & 2.91 & 0.63 & 38.28 \\ 
+  7 & PXD & 203.20 &  51 & 204.74 &  51 & 76.36 & 2.18 & 0.74 & 205.01 \\ 
+  8 & RHI & 39.50 & 261 & 39.30 & 261 & -53.99 & 2.79 & -0.52 & 39.28 \\ 
+  9 & TSS & 30.02 & 347 & 29.97 & 347 & -20.00 & 3.65 & -0.19 & 30.00 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Stock Portfolio}
+No stock hold in the portfolio at the end of the day.
+
+
+\section{Trading Matrix}
+
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{table}[ht]
+\begin{tabular}{lr}
+   \hline
+Portofolio Amount: & 93461.50 \\ 
+  Asset Amount: & 0.00 \\ 
+  Bought Amount: & 93124.70 \\ 
+  Sold   Amount: & 93560.48 \\ 
+  Commission   : & 44.72 \\ 
+  P/L incl Comm: & 391.06 \\ 
+  Ret incl Comm \%: & 0.42 \\ 
+  S\&P 500 Ret \%: & -0.47 \\ 
+   \hline
+\end{tabular}
+\caption{The commissions and daily returns are calculated based on the closed position.
+The open position is present in the portofolio and assume closing on the next open market.
+Portofolio amount is the open order with today closing price.} 
+\end{table}
+
+
+
+% \section{Trade Slippage}
+% 
+% <<slippage, echo = FALSE , results='asis'>>=
+% 
+% colnames(slippage) <- c('Symbol','Open Slippage %', 'Close Slippage %');
+% print(xtable(slippage),floating=FALSE,);
+% @
+
+
+\title{Buy On Gap trading report - S\&P 600}
+\maketitle
+
+\section{Trade execution}
+\subsection{Order executed}
+
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrrrrrrr|r}
+  \hline
+ & Symbol & B.AvgPrc & B.Qty & S.AvgPrc & S.Qty & Profit & Comm. & Return \% & Closing Price \\ 
+  \hline
+1 & ABAX & 35.00 & 311 & 32.27 & 311 & -852.32 & 3.28 & -7.83 & 32.29 \\ 
+  2 & ATMI & 26.68 & 414 & 27.16 & 414 & 194.38 & 4.34 & 1.76 & 27.16 \\ 
+  3 & CRZO & 42.36 & 257 & 42.73 & 257 & 92.33 & 2.76 & 0.85 & 42.78 \\ 
+  4 & IART & 41.97 & 260 & 43.40 & 260 & 369.00 & 2.80 & 3.38 & 43.42 \\ 
+  5 & IRBT & 32.95 & 331 & 34.75 & 331 & 593.29 & 3.51 & 5.44 & 34.86 \\ 
+  6 & LAD & 63.80 & 171 & 63.22 & 171 & -101.63 & 2.19 & -0.93 & 63.37 \\ 
+  7 & MCRI & 20.09 & 543 & 18.70 & 543 & -760.38 & 5.61 & -6.97 & 18.71 \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Stock Portfolio}
+No stock hold in the portfolio at the end of the day.
+
+
+\section{Trading Matrix}
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{table}[ht]
+\begin{tabular}{lr}
+   \hline
+Portofolio Amount: & 97715.10 \\ 
+  Asset Amount: & 0.00 \\ 
+  Bought Amount: & 76453.62 \\ 
+  Sold   Amount: & 76012.79 \\ 
+  Commission   : & 24.48 \\ 
+  P/L incl Comm: & -465.31 \\ 
+  Ret incl Comm \%: & -0.47 \\ 
+  S\&P 500 Ret \%: & -0.14 \\ 
+   \hline
+\end{tabular}
+\caption{The commissions and daily returns are calculated based on the closed position.
+The open position is present in the portofolio and assume closing on the next open market.
+Portofolio amount is the open order with today closing price.} 
+\end{table}
+
+
+
+% \section{Trade Slippage}
+% 
+% <<slippage_sp600, echo = FALSE , results='asis'>>=
+% 
+% colnames(slippage) <- c('Symbol','Open Slippage %', 'Close Slippage %');
+% print(xtable(slippage),floating=FALSE,);
+% @
+
+\newpage
+\section{News}
+
+%\begin{margintable}
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & BRCM \\ 
+  \hline
+1 &  Broadcom (BRCM), a leading semiconductor provider for wired and wireless communications, will report its Q3 2013 earnings on October 22.  \\ 
+  2 &  In a report published Tuesday, Drexel Hamilton analyst Richard Whittington initiated coverage on Broadcom Corporation (NASDAQ: BRCM) with a Hold rating and \$30.00 price target.  \\ 
+  3 &  Broadcom Corporation provides semiconductor solutions for wired and wireless communications. Its products offer voice, video, data, and multimedia connectivity in the home, office, and mobile environments.  \\ 
+  4 &  Broadcom Corp.'s (BRCM) third-quarter profit rose to \$316 million, or 55 cents a share, as the chip maker's margins and revenue increased, but it offered weak revenue guidance for the current quarter.  \\ 
+  5 &  Welcome to the Broadcom Quarter Three 2013 Earnings Call. My name is Sharon and I will be your operator for today's call.  \\ 
+  6 &  Broadcom Corporation (NASDAQ: BRCM), a global innovation leader in semiconductors for wired and wireless communications, today announced it will provide a live webcast for its annual Analyst Day event and ...  \\ 
+  7 &  In a report published Wednesday, Nomura analyst Romit Shah reiterated a Buy rating on Broadcom Corporation (NASDAQ: BRCM), but lowered the price target from \$36.00 to \$33.00.  \\ 
+  8 &  To reflect weakness in the mobile market, analysts at Wedbush have downgraded Broadcom Corporation (BRCM ) from âOutperformâ to âNeutral.  \\ 
+  9 &  The company's stock is up 0.33\% in the previous three trading sessions, underperforming the S\&P 500, which has advanced 1.24\% during the same period.  \\ 
+  10 &  In a report published Wednesday, Jefferies analyst Mark Lipacis reiterated a Buy rating on Broadcom Corporation (NASDAQ: BRCM), but lowered the price target from \$34.00 to \$32.00.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & CLF \\ 
+  \hline
+1 &  In the first half of this year, Cliffs Natural Resources (CLF) was hit hard by a sharp 26\% decline in iron ore prices from February 2013 to July 2013.  \\ 
+  2 &  Cliffs Natural Resources Inc. (NYSE:CLF) (EPA:FR:CLF) announced today that its Board of Directors has elected Stephen M. Johnson, 62, chairman, president and chief executive officer of ...  \\ 
+  3 &  Investors eyeing a purchase of Cliffs Natural Resources, Inc. (NYSE: CLF) shares, but cautious about paying the going market price of \$20.03/share, might benefit from considering selling puts among the alternative strategies at their disposal.  \\ 
+  4 &  On Wednesday, October 9, 2013, the S\&P 500 ended the day at 1,656.40, up 0.06\%; the Dow Jones Industrial Average closed at 14,802.98, up 0.18\%; while the NASDAQ Composite finished at 3,677.78, down 0.46\%.  \\ 
+  5 &  Boston, MA 10/16/2013 (wallstreetpr) - Cliffs Natural Resources Inc (NYSE:CLF) is set to announce its third quarter results on October 24, 2013.  \\ 
+  6 &  Boston, MA 10/18/2013 (wallstreetpr) - Cliffs Natural Resources Inc (NYSE:CLF) is likely to reports its 3Q13 earnings on October 24, 2013.  \\ 
+  7 &  Cliffs Natural Resources Inc., a U.S.-based company that is prepared to spend billions of dollars on the massive mining project, has been unable to build an all-weather road to the site because it would cross land staked by a rival company.  \\ 
+  8 &  Hot Stock Profits provides investors and traders with valuable trading tools and content as well as micro-cap stock alerts via eMail and text messages.  \\ 
+  9 &  In the Cliffs Natural Resources earnings report, watch to see how the company is progressing with its plans to replace retiring CEO Joseph Carrabba by the end of the year.  \\ 
+  10 &  Cliffs Natural Resources (CLF) to Release Quarterly Earnings on Thursday  -  Ticker Report Worth Watching Stocks - BlackBerry Ltd (NASDAQ:BBRY), Optimer ...  -  Techsonian (press release) \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & EMC \\ 
+  \hline
+1 &  EMC Corporation (NYSE:EMC) options traders were busy yesterday. Total volume finished at about 29,000 contracts  \\ 
+  2 &  EMC Corporation (NYSE: EMC) would publish its third-quarter 2013 financial results on October 22, 2013. The company is also expected to hold a conference call for investors on the same day at 8:30 a.m.  \\ 
+  3 &  We expect professional networking solution provider EMC Corporation (EMC - Analyst Report) to beat expectations when it reports third-quarter 2013 results on Oct 22, 2013.  \\ 
+  4 &  EMC Corporation, together with its subsidiaries, develops, delivers, and supports information infrastructure and virtual infrastructure technologies, solutions, and services.  \\ 
+  5 &  EMC Corporation is a global leader in enabling businesses and service providers to transform their operations and deliver IT as a service.  \\ 
+  6 &  To many investors it makes no sense. EMC (EMC) owns 80\% of VMware (VMW). VMware's most important recent spin-out is the Pivotal Initiative, which is 62\% owned by EMC. [GE (GE) paid \$105 million to get a 10\% stake.] Yet, whether you look at it from a ...  \\ 
+  7 &  Good morning and welcome to the EMC Third Quarter 2013 Earnings Conference Call. All parties are in a listen-only mode until the question-and-answer portion of the call.  \\ 
+  8 &  The quotes above come from a sueball (PDF) thrown by EMC in the case of EMC Corporation v. Johnson, currently burbling through the US District Court.  \\ 
+  9 &  Analysts are weighing in today on semiconductor name Broadcom Corporation (NASDAQ:BRCM), LED specialist Cree, Inc. (NASDAQ:CREE), and IT services provider EMC Corporation (NYSE:EMC). Here's a quick roundup of today's bearish brokerage notes ...  \\ 
+  10 &  EMC Corporation (EMC) is a provider of data storage solutions that has sold off lately on concerns of a slowdown in orders, mostly related to the temporary government shutdown.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & LSI \\ 
+  \hline
+1 &  LeadingStockAlerts is a financial marketing firm that specializes in assisting the underserved small cap and micro-cap stock community.  \\ 
+  2 &  LeadingStockAlerts is a financial marketing firm that specializes in assisting the underserved small cap and micro-cap stock community.  \\ 
+  3 &  Today, Investors' Reports announced new research reports highlighting First Solar, Inc. (NASDAQ: FSLR), Canadian Solar Inc. (NASDAQ: CSIQ), ARM Holdings plc (NASDAQ: ARMH), ReneSola Ltd.  \\ 
+  4 &  Dallas, Texas 10/17/2013 (Financialstrend) - On the sidelines of VMWORLD 2013 being held in Barcelona, LSI Corp (NASDAQ:LSI) has announced the launch of âLSI(R) Nytro(TM) XD Application Acceleration Storage Solutionâ.  \\ 
+  5 &  LSI Corp (NASDAQ:LSI) ended its recent business day with the gain of 1.21\% and closed at the price of \$7.94 after opening at \$7.79.  \\ 
+  6 &  "In a challenging macroeconomic environment we delivered solid third quarter results, with revenues growing sequentially from products for flash and networking as well as hard disk drives," said Abhi Talwalkar, LSI's President and CEO. "While our end ...  \\ 
+  7 &  Lakeway, NY - (Market News Call) - 10/23/2013 - Specialpennystockalert.com, an investment community with a special focus on updating investors with recent news on the U.S.  \\ 
+  8 &  LSI Corp. logo LSI Corp. (NYSE:LSI) updated its fourth quarter earnings guidance on Wednesday. The company provided earnings per share guidance of \$0.13-0.19 for the period, compared to the Thomson Reuters consensus earnings per share estimate of ...  \\ 
+  9 &  LSI Corp. logo LSI Corp. (NYSE:LSI) released its earnings data on Wednesday. The company reported \$0.17 EPS for the quarter, beating the Thomson Reuters consensus estimate of \$0.16 by \$0.01, AR Network reports.  \\ 
+  10 &  Ladies and gentlemen, thank you for standing by. Welcome to the LSI Corporation Investor Relations Conference Call. [Operator Instructions] As a reminder, this conference is being recorded.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & NBR \\ 
+  \hline
+1 &  Shares in the oil and gas drilling and exploration industry ended on a mixed note, even as the broader market declined. The major movers included Noble Corporation (NYSE: NE), Nabors Industries Ltd. (NYSE: NBR), Pengrowth Energy Corporation (NYSE: ...  \\ 
+  2 &  Ericsson (ADR)(NASDAQ:ERIC) managed to keep its loss at -0.07\% on below-normal volume of 2.74M shares. The stock settled at \$13.64 after floating in a range of \$13.59 to \$13.69.  \\ 
+  3 &  LeadingStockAlerts is a financial marketing firm that specializes in assisting the underserved small cap and micro-cap stock community.  \\ 
+  4 &  Nabors Industries sells Alaska services unit. Nabors Industries (NBR +2.6\%) shares push higher after the drilling contractor agrees to sell its Alaska-focused support services unit Peak Oilfield Service to Bristol Bay Native Corp. for an undisclosed sum.  \\ 
+  5 &  Nabors Industries Ltd. (NYSE:NBR), traded with volume of 4.05 million shares in the prior session and the average volume of the stock remained 3.37 million shares.  \\ 
+  6 &  ... DiamondRock Hospitality Company (NYSE:DRH), Frontline Ltd. (NYSE:FRO), Coty Inc (NYSE:COTY). Nabors Industries Ltd. (NYSE:NBR), opened the session at \$17.01, remained amid the day range of \$16.89 - \$17.20, and closed the session at \$17.09.  \\ 
+  7 &  Nabors Industries (NBR) is a highly undervalued company with huge potential on an international level in a business with high growth prospects.  \\ 
+  8 &  Inovio Pharmaceuticals Inc (NYSEMKT:INO) opened its last trade at the price of \$2.11. Its closing price was \$2.09 after losing -1.88\% for the day.  \\ 
+  9 &  Las Vegas, NV - October 23, 2013 - (Tech Sonian) - Value Stock Pick is a leading Investment Newsletter. Our Research Team conducts research on different stocks, doing their due diligence to provide a detailed report, including both technical and ...  \\ 
+  10 &  Nabors Industries Ltd. (Nabors) is the land drilling contractor and land well-servicing and workover contractors in the United States and Canada.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & NLSN \\ 
+  \hline
+1 &  NIELSEN HOLDINGS NV has improved earnings per share by 10.7\% in the most recent quarter compared to the same quarter a year ago.  \\ 
+  2 &  NEW YORK - Oct. 8, 2013 - Eighty-five percent of global consumers in an online survey say rising food prices will affect their choice of grocery products, according to a new study by Nielsen, a leading global provider of information and insights into ...  \\ 
+  3 &  Nielsen Holdings N.V. (NYSE:NLSN), a global information and measurement company, today announced that it will report its financial results for the third quarter 2013 on Wednesday, October 23, 2013.  \\ 
+  4 &  Here's a potentially lucrative project for an entrepreneurial techie: figure out a simple way to track the number of people watching "Breaking Bad" or "Insidious" on their smartphones and iPads.  \\ 
+  5 &  ... of the huge volumes of tweets that get produced for popular shows when they air (Breaking Bad is one notable example). Twitter has also struck a video clip deal with CBS, and formed a partnership with Nielsen (NLSN) to track TV-related Twitter ...  \\ 
+  6 &  NEW YORK - Oct. 21, 2013 - Nielsen and Experian Marketing Services today announced a collaboration to go beyond Nielsen's established demographics in reporting online advertising audiences. Currently, Nielsen Online Campaign Ratingsâ¢ reports on ...  \\ 
+  7 &  The Board of Directors of Nielsen Holdings N.V. (NYSE: NLSN), a leading global provider of information and insights into what consumers watch and buy, today declared a quarterly cash dividend of 20 cents per share of common stock.  \\ 
+  8 &  Nielsen Holdings N.V. (NYSE:NLSN), a leading global provider of information and insights into what consumers watch and buy, today announced financial results for the third quarter ended September 30, 2013.  \\ 
+  9 &  Vote up. loading. (RTTNews.com) - Nielsen Holdings N.V. ( NLSN ) will host a conference call at 8:30 AM ET on October 23, 2013, to discuss its Q3 13 earnings results.  \\ 
+  10 &  Nielsen Holdings N.V. logo Nielsen Holdings N.V. (NASDAQ:NLSN) issued its quarterly earnings data on Wednesday. The company reported \$0.50 EPS for the quarter, beating the Thomson Reuters consensus estimate of \$0.48 by \$0.02, Stock Ratings ...  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & PXD \\ 
+  \hline
+1 &  Looking at the universe of stocks we cover at Dividend Channel, on 9/26/13, Pioneer Natural Resources Co (NYSE: PXD) will trade ex-dividend, for its semi-annual dividend of \$0.04, payable on 10/11/13.  \\ 
+  2 & Pioneer Natural Resources Company (NYSE:PXD) today announced that Tim Dove, President and Chief Operating Officer, will present at The Johnson Rice Energy Conference on Tuesday, October 1 at 11:00 a.m.  \\ 
+  3 &  Pioneer Natural Resources Company ( PXD ) will begin trading ex-dividend on September 26, 2013. A cash dividend payment of \$0.04 per share is scheduled to be paid on October 11, 2013.  \\ 
+  4 &  At least one of the men burned on the job at Pioneer Natural Resources on Monday night was released Wednesday from the hospital.  \\ 
+  5 &  While companies like EOG Resources (EOG) and Continental Resources (CLR) get most of the headlines, Pioneer Natural Resources (PXD) could well be the best long-term investment in the entire US shale space. The stock could easily double over the next ...  \\ 
+  6 &  (RTTNews.com) - Pioneer Natural Resources ( PXD ) has spiked to the upside in the last few minutes of trade on increased volume.  \\ 
+  7 &  (RTTNews.com) - Pioneer Natural Resources ( PXD ) gapped open sharply higher Wednesday morning and is now up 11.40 at \$211.12 in early trade.  \\ 
+  8 &  Thanks to drilling in areas like the Bakken and Eagle Ford Oil Formations, the U.S. is beginning to produce reserves of oil and natural gas like never before.  \\ 
+  9 &  UPDATE: Kodiak Oil \& Gas (KOG), Pioneer Natural Resources Co. (PXD) Potential Targets, Says Paulson \& co. Article Stock Quotes (2) Comments (0).  \\ 
+  10 &  U.S. oil production is not going to vaporize any time soon as many depletion theorists argue. Could this be another faction of the peak oil theorists?  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & RHI \\ 
+  \hline
+1 &  Robert Half International Inc. (NYSE symbol: RHI) today announced it expects to release third-quarter 2013 earnings results on Tuesday, October 22, at approximately 4 p.m.  \\ 
+  2 &  Robert Half International Inc. (NYSE symbol: RHI) today reported revenues and earnings for the third quarter ended September 30, 2013.  \\ 
+  3 &  Hiring can be tough, and the difficulty starts with writing a good job description, a new survey from The Creative Group suggests.  \\ 
+  4 &  Consulting magazine has named Protiviti's Barbara Rothenstein, senior vice president of global finance and field operations, to its 2013 Women Leaders in Consulting list.  \\ 
+  5 &  loading. Leading staffing firm Robert Half International Inc. ( RHI ) reported third quarter 2013 earnings of 48 cents, ahead of the prior-year quarter adjusted earnings of 41 cents per share by 17.1\%.  \\ 
+  6 &  Leading staffing firm Robert Half International Inc. (RHI - Analyst Report) reported third quarter 2013 earnings of 48 cents, ahead of the prior-year quarter adjusted earnings of 41 cents per share by 17.1\%.  \\ 
+  7 &  Robert Half International Inc. (NYSE: RHI) reported third-quarter global revenue of \$1.08 billion, up 4.1 percent from \$1.03 billion in the third quarter of last year and in line with analyst estimates.  \\ 
+  8 &  Robert Half International Inc. logo Robert Half International (NYSE:RHI)'s stock had its âholdâ rating restated by Zacks in a note issued to investors on Wednesday, Analyst Ratings Network reports.  \\ 
+  9 &  Robert Half International Inc. logo Research analysts at RBC Capital hoisted their price target on shares of Robert Half International (NYSE:RHI) from \$40.00 to \$45.00 in a report released on Wednesday, Stock Ratings News reports.  \\ 
+  10 &  Robert Half International Inc. logo Investment analysts at Deutsche Bank boosted their price objective on shares of Robert Half International (NYSE:RHI) from \$41.00 to \$43.00 in a note issued to investors on Wednesday, AnalystRatings.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & TSS \\ 
+  \hline
+1 &  COLUMBUS, Ga., Sept. 27, 2013 - Total System Services, Inc. (NYSE: TSS) today announced that earlier this month an employee of Paragon Benefits, Inc., a third-party claims administrator of the TSYS Employee Health Plan and the TSYS Retiree Health ...  \\ 
+  2 &  TSYS (NYSE: TSS) today announced it has made available to the industry the results of its 2013 Consumer Payment Choice Study, which consists of an online survey and in-person focus groups  \\ 
+  3 &  ProPay (www.propay.com), a TSYS company and industry leader in merchant services, payment security and mobile payments, announced today it was recently recognized as the top online payment service by merchants participating in the EcommerceBytes ...  \\ 
+  4 &  TSYS will host its quarterly conference call at 5:00 p.m. ET on Tuesday, October 22. The conference call can be accessed via simultaneous Internet broadcast at tsys.com by clicking on the link under "Webcasts" on the main homepage. The replay will be ...  \\ 
+  5 &  Total System Services Inc. logo Total System Services (NYSE:TSS)'s stock had its âneutralâ rating restated by equities researchers at Nomura in a research report issued on Wednesday, Stock Ratings News reports.  \\ 
+  6 &  Total System Services Inc. logo Total System Services (NYSE:TSS)'s stock had its âin-lineâ rating reaffirmed by equities research analysts at Credit Suisse in a research note issued to investors on Wednesday, AnalystRatings.  \\ 
+  7 &  Total System Services Inc. (TSS - Analyst Report) reported third-quarter 2013 operating earnings of 46 cents per share, a penny higher than the Zacks Consensus Estimate.  \\ 
+  8 &  Total System Services Inc. logo Research analysts at Keefe, Bruyette \& Woods upped their target price on shares of Total System Services (NYSE:TSS) from \$30.00 to \$33.00 in a report released on Wednesday, American Banking \& Market News reports.  \\ 
+  9 &  Total System Services, Inc. (NYSE:TSS) ended its recent business day with the loss of -2.09\% and closed at the price of \$30.01 after opening at \$30.31.  \\ 
+  10 &  The company will host a trimester conference call on Tuesday. People can log into the call at the same time on the internet by going to tsys.com by clicking on the link under âWebcastsâ on the main page. The call will remain in the archives for the ...  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & ABAX \\ 
+  \hline
+1 &  Abaxis, Inc. (NasdaqGS: ABAX), a medical products company manufacturing point-of-care blood instrumentation and consumables to the medical, research and veterinary markets, has scheduled a ...  \\ 
+  2 &  Abaxis, Inc. (NasdaqGS: ABAX), a medical products company manufacturing point-of-care blood analysis systems, today reported financial results for the second fiscal quarter ended September 30, 2013.  \\ 
+  3 &  (RTTNews.com) - Abaxis Inc.( ABAX ) posted second-quarter net income of \$4.0 million, or \$0.18 per share, compared to \$12.9 million or \$0.58 per share in the prior year quarter.  \\ 
+  4 &  Abaxis Inc. logo Investment analysts at Feltl \& Co. decreased their price target on shares of Abaxis (NASDAQ:ABAX) from \$45.00 to \$37.75 in a note issued to investors on Wednesday, AR Network reports.  \\ 
+  5 &  Abaxis, Inc. (ABAX - Analyst Report) reported second-quarter fiscal 2014 earnings per share of 18 cents, missing the Zacks Consensus Estimate by 2 cents.  \\ 
+  6 &  Lakeway, NY - (Market News Call) - 10/23/2013 - Specialpennystockalert.com, an investment community with a special focus on updating investors with recent news on the U.S.  \\ 
+  7 &  Abaxis Inc. (ABAX, \$32.40, -\$5.68, -14.92\%) reported fiscal second-quarter results that missed Wall Street's expectations, and Stifel said in a note to clients its concerns about the medical-device company's inventory stocking in its veterinary ...  \\ 
+  8 &  Abaxis Inc (NASDAQ:ABAX) ticked down -14.92\% falling to a new 52 week low \$32.11 closing at \$32.40 after the company posted disappointing quarterly results.  \\ 
+  9 &  Today We bring special trend analysis of following stocks: Abaxis Inc(NASDAQ:ABAX), Gigamon Inc(NYSE:GIMO), RF Micro Devices, Inc.(NASDAQ:RFMD), Century Aluminum Co(NASDAQ:CENX) Abaxis Inc(NASDAQ:ABAX), during the previous trading ...  \\ 
+  10 &  Abaxis Inc (NASDAQ:ABAX) remained among the day bearish and traded with volume of 1.45 million shares in the last session, as compared to average volume of 160.415 shares.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & ATMI \\ 
+  \hline
+1 &  I also think that there is an especially good opportunity in some of the smaller, more specialized companies, such as ATMI (ATMI), a smaller company that supplies equipment used in the manufacture of semiconductor products. I think this company is ...  \\ 
+  2 &  ATMI, Inc.(Nasdaq:ATMI), a global technology company, intends to release its third quarter 2013 financial results before the market opens on Wednesday, October 23, 2013.  \\ 
+  3 &  ATMI Inc. (ATMI - Snapshot Report) has moved higher as of late, but there could definitely be trouble on the horizon for this company.  \\ 
+  4 &  ATMI Inc. (ATMI) is scheduled to reports Q3 earnings on Wednesday October 23 before the bell. The company is expected to earn \$0.32 per share versus \$0.44 per share it earned a year ago in the same quarter.  \\ 
+  5 &  ... ATMI Earnings Conf Call 23 Oct 15:00 Q3 2013 Caterpillar Inc. Earnings Conf Call 23 Oct 15:00 Q3 2013 CBIZ, Inc. Earnings Conf Call 23 Oct 15:00 Q4 2013 Commercial Metals Company Earnings Conf Call 23 Oct 15:00 Q3 2013 Community Bank System ...  \\ 
+  6 &  ... 12 0.87 23 Oct BMO Q3 2013 AMAG Pharmaceuticals, Inc. -0.12 6 -0.19 23 Oct AMC Q3 2013 Angie's List Inc -0.20 21 -0.32 23 Oct AMC Q3 2013 On Assignment, Inc. 0.35 11 0.34 23 Oct BMO Q3 2013 ATMI 0.32 4 0.44 23 Oct AMC Q3 2013 Banner Corp.  \\ 
+  7 &  (RTTNews.com) - ATMI, Inc. ( ATMI ), a technology company, Wednesday reported a decrease in third-quarter net income, that missed the Street estimates, reflecting lower revenues.  \\ 
+  8 &  ... 66.1 65.5 -0.6 ASSURANT INC Q3 INSURANCE USD 1.50 1.71 0.21 2206.0 2258.7 52.7 AT\&T INC Q3 TELEPHONE UTILITIES USD 0.65 0.66 0.01 32186.8 32158.0 -28.8 ATMI INC Q3 SEMICONDUCTORS/COMPONENT USD 0.32 0.29 -0.03 105.2 100.2 ...  \\ 
+  9 &  On a related note, analysts at Zacks downgraded shares of ATMI from a âneutralâ rating to an âunderperformâ rating in a research note to investors on Monday, July 29th.  \\ 
+  10 &  ATMI, Inc. (Nasdaq:ATMI), a global technology company, today reported financial results for the third quarter of 2013.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & CRZO \\ 
+  \hline
+1 &  Carrizo Oil \& Gas, Inc. (CRZO) IPAA OGIS San Francisco Conference Call September 30, 2013 2:00 PM ET. Hsulin Peng - Robert W. Baird.  \\ 
+  2 &  Today, Analysts' Corner announced new research reports highlighting Cabot Oil \& Gas Corporation (NYSE: COG), Pioneer Natural Resources Co.  \\ 
+  3 &  Carrizo Oil \& Gas (CRZO +1.6\%) is initiated with a Buy rating and \$50 price target at Sterne Agee, even after the stock's 96\% YTD rally.  \\ 
+  4 &  Carrizo Oil \& Gas, Inc. is a Houston-based energy company actively engaged in the exploration, development, and production of oil and gas from resource plays located in the United States.  \\ 
+  5 &  LeadingStockAlerts is a financial marketing firm that specializes in assisting the underserved small cap and micro-cap stock community.  \\ 
+  6 &  Carrizo Oil \& Gas, Inc. (Carrizo) is an independent energy company. Carrizo together with its subsidiaries is engaged in the exploration, development, and production of oil and gas in the United States and the United Kingdom.  \\ 
+  7 &  Angie's List Inc(NASDAQ:ANGI), Carrizo Oil \& Gas, Inc.(NASDAQ:CRZO), Northern Oil \& Gas, Inc.(NYSEMKT:NOG), Neurocrine Biosciences, Inc.(NASDAQ:NBIX) Angie's List Inc(NASDAQ:ANGI) reported the gain of ...  \\ 
+  8 &  Equity Profile Report expands its NASDAQ Gainers Weekly Watch List adding Gulf Resources, Inc. (NASDAQ:GURE) and Carrizo Oil \& Gas Inc. (NASDAQ:CRZO). Gulf Resources, Inc. (NASDAQ:GURE) a company ...  \\ 
+  9 &  Carrizo Oil \& Gas Inc. logo Zacks downgraded shares of Carrizo Oil \& Gas (NASDAQ:CRZO) from an outperform rating to a neutral rating in a report issued on Monday, Analyst Ratings Network.  \\ 
+  10 &  Compuware Corporation (NASDAQ:CPWR) opened its last trade at the price of \$10.68. Its closing price was \$10.60 after losing -0.89\% for the day.  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & IART \\ 
+  \hline
+1 &  However in April the company announced a recall of collagen products because of problems at a facility in Puerto Rico. Integra said some of the products might not meet approved manufacturing standards.  \\ 
+  2 &  Integra LifeSciences Holdings Corp. logo Barclays Capital began coverage on shares of Integra LifeSciences Holdings Corp. (NASDAQ:IART) in a report issued on Friday, AR Network reports. The firm issued an equal weight rating and a \$43.00 target price ...  \\ 
+  3 &  Integra LifeSciences Holdings Corporation (Nasdaq:IART) today announced the introduction of the IntegraÂ® Laminoplasty System, a comprehensive set of implants and instruments designed for use ...  \\ 
+  4 &  Integra LifeSciences Holdings Corporation (Nasdaq:IART) will release its third quarter 2013 financial results on Monday, October 28, 2013.  \\ 
+  5 &  Integra Lifesciences Holdings Corp. ( IART ) has moved higher as of late, but there could definitely be trouble on the horizon for this company.  \\ 
+  6 &  Integra LifeSciences Holdings Corporation (Nasdaq:IART) today announced the market release of the IntegraÂ® Proximal Humeral Fracture Plate System in the United States.  \\ 
+  7 &  Integra LifeSciences Holdings Corporation (NASDAQ:IART) today announced the introduction of the next-generation Licox(R) Brain Tissue Oxygen Monitoring System.  \\ 
+  8 &  Integra LifeSciences Holdings Corporation (Nasdaq:IART) today announced the introduction of the next-generation LicoxÂ® Brain Tissue Oxygen Monitoring System.  \\ 
+  9 &  Integra LifeSciences Holdings Corp. logo Integra LifeSciences Holdings Corp. (NASDAQ:IART) was downgraded by equities research analysts at Morgan Stanley to an âunderweightâ rating in a research note issued to investors on Wednesday, ...  \\ 
+  10 &  Integra LifeSciences Holdings Corporation (Nasdaq:IART)today announced that it plans to eliminate manufacturing operations in Burlington, Massachusetts .  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & IRBT \\ 
+  \hline
+1 &  Today, Analysts' Corner announced new research reports highlighting Apple Inc. (NASDAQ: AAPL), Pitney Bowes Inc. (NYSE: PBI), VeriFone Systems, Inc. (NYSE: PAY), Hasbro Inc. (NASDAQ: HAS), and iRobot Corporation (NASDAQ: IRBT). Today's readers ...  \\ 
+  2 &  iRobot Corp. (NASDAQ:IRBT) traded down 1.70\% on Tuesday, hitting \$36.9701. 115,968 shares of the company's stock traded hands.  \\ 
+  3 &  iRobot Corp. logo iRobot Corp. (NASDAQ:IRBT) will be announcing its Q313 earnings results on Wednesday, October 23rd.  \\ 
+  4 &  iRobot Corp. ( IRBT ) is due to issue its quarterly earnings report after the close today. Given its history, traders can expect very active trading in the upcoming After-hours session immediately following the company's release of its quarterly earnings.  \\ 
+  5 &  iRobot Corp. sees FY2013 revenue of \$485-490 million, versus the consensus of \$492.2 million. iRobot Corp. sees Q4 2013 EPS of \$0.06-\$0.11, versus the consensus of \$0.17.  \\ 
+  6 &  iRobot Corp. logo iRobot Corp. (NASDAQ:IRBT) issued an update on its fourth quarter earnings guidance on Tuesday morning.  \\ 
+  7 &  On top of missing Q3 revenue estimates, iRobot (IRBT) is guiding for Q4 revenue of \$124M-\$129M and EPS of \$0.06-\$0.11, mostly below a consensus of \$129M and \$0.17.  \\ 
+  8 &  iRobot Corp. logo iRobot Corp. (NASDAQ:IRBT) released its earnings data on Wednesday. The company reported \$0.26 earnings per share (EPS) for the quarter, beating the consensus estimate of \$0.24 by \$0.02, Analyst Ratings.  \\ 
+  9 &  iRobot Corp (NASDAQ: IRBT) now trades at \$32.87, down -5.5 percent during after hours trade with 5,050 total share volume. IRBT now trades -15.21 percent below its 52-week high and 114.52 percent above its 52-week low.  \\ 
+  10 &  Growing Stock Report expands its NASDAQ Decliners Weekly Watch List adding Xoom Corporation (NASDAQ:XOOM) and iRobot Corporation (NASDAQ:IRBT). Xoom Corporation (NASDAQ:XOOM) a company ...  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & LAD \\ 
+  \hline
+1 &  Lithia Motors Inc. logo Lithia Motors (NYSE:LAD)'s stock had its âbuyâ rating restated by investment analysts at Stifel Nicolaus in a note issued to investors on Wednesday, Analyst Ratings Network reports.  \\ 
+  2 &  Lithia Motors (LAD) continues to be the champion of the small-cap auto retail space. It's already up 100\% YTD after posting the highest quarterly adjusted net income in history.  \\ 
+  3 &  Lithia Announces Acquisition of Nissan and Kia Store; Schedules Release of ...  -  MarketWatch Stockton auto dealerships sold  -  Central Valley Business Times \\ 
+  4 &  (NYSE: JAH-Free Report), Micron Technology Inc. (Nasdaq: MU-Free Report), Lithia Motors Inc. (NYSE: LAD-Free Report) and The Chubb Corp.  \\ 
+  5 &  Today, Analysts' Corner announced new research reports highlighting O'Reilly Automotive Inc. (NASDAQ: ORLY), Magna International, Inc. (NYSE: MGA), Asbury Automotive Group, Inc. (NYSE: ABG), Penske Automotive Group, Inc. (NYSE: PAG), and Lithia ...  \\ 
+  6 & (Marketwired - Oct 23, 2013) - Lithia Motors, Inc. ( NYSE : LAD) today reported the highest quarterly adjusted net income from continuing operations in Company history, and a 27\% increase in adjusted net income per share from continuing ...  \\ 
+  7 &  Lithia Motors, Inc, is an operator of automotive franchises and a retailer of new and used vehicles and services. Get Analysts' Upgrades and Downgrades via Email - Stay on top of analysts' coverage with Analyst Ratings Network's FREE daily email ...  \\ 
+  8 &  (RTTNews.com) - Lithia Motors Inc. ( LAD ) reported that its third-quarter net income increased to \$31.02 million or \$1.18 per share, from \$23.24 million or \$0.90 per share, last year.  \\ 
+  9 &  Lithia Motors logo Lithia Motors (NYSE:LAD) announced a quarterly dividend on Wednesday, October 23rd, AnalystRatings.  \\ 
+  10 &  Lithia Motors, Inc. (NYSE: LAD) today reported the highest quarterly adjusted net income from continuing operations in Company history, and a 27\% increase in adjusted net income per share from continuing ...  \\ 
+   \hline
+\end{tabularx}
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Oct 24 22:35:15 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & MCRI \\ 
+  \hline
+1 &  Farahi Ben who is 10\% Owner at Monarch Casino \& Resort Inc. (NASDAQ:MCRI), sold 17,824 shares at \$21.45 per share for a total value of \$382,345.  \\ 
+  2 &  Monarch Casino \& Resort Inc. logo Monarch Casino \& Resort (NASDAQ:MCRI) was downgraded by analysts at Thomson Reuters/Verus from a âbuyâ rating to a âholdâ rating in a research report issued to clients and investors on Monday, Stock Ratings ...  \\ 
+  3 &  ... or call 303.582.1000. Check out Monarch Casino Black Hawk on Facebook, www.facebook.com/MonarchCasino or on Twitter at @MonarchCasino.  \\ 
+  4 &  ... -0.02 0.01 0.03 30.9 33.8 2.9 MCGRAW HILL FINANCIAL INC Q3 COMMUNICATIONS USD 0.77 0.80 0.03 1172.0 1194.0 22.0 MERIDIAN INTERSTATE BANC Q3 BANKING USD 0.10 0.16 0.06 19.2 19.1 -0.1 MONARCH CASINO \& RESORT, Q3 LEISURE ...  \\ 
+  5 &  Brean Capital downgraded Monarch Casino \& Resort (NASDAQ: MCRI) from Buy to Hold. The downgrade is based on ... Casino \& Resort click here. Shares of Monarch Casino \& Resort closed at \$21.96 yesterday, with a 52 week range of \$8.31-\$22.12.  \\ 
+  6 &  Monarch Casino \& Resort, Inc (NASDAQ:MCRI), through its wholly owned subsidiary, Golden Road Motor Inn, Inc (Golden Road), owns and operates the Atlantis Casino Resort Spa(the Atlantis), a hotel/casino facility in Reno, Nevada.  \\ 
+  7 &  ARM Holdings (ARMH): After yesterday's ho-hum Apple Inc. (AAPL) announcements, one of its key chip suppliers gets cut to Neutral from Buy at UBS.  \\ 
+  8 &  Monarch Casino \& Resort, Inc. (Nasdaq: MCRI) 15.0\% LOWER; reported Q3 revs of \$48.99 million and EPS of \$0.32, from revs of \$46.03 million and EPS of \$0.25 posted in the same period last year.  \\ 
+  9 &  What: Shares of Monarch Casino \& Resort were cooling off today, falling as much as 20\% after the company's earnings report failed to impress.  \\ 
+  10 &  Growing Stock Report expands its NASDAQ Decliners Weekly Watch List adding Datalink Corporation (NASDAQ:DTLK) and Monarch Casino \& Resort Inc. (NASDAQ:MCRI). Datalink Corporation (NASDAQ:DTLK) a ...  \\ 
+   \hline
+\end{tabularx}
+
+
+%\end{margintable}
+
+\newpage
+\section{Individual contract}
+\begin{fullwidth}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart1} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart2} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart3} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart4} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart5} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart6} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart7} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart8} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart9} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart10} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart11} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart12} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart13} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart14} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart15} 
+
+\includegraphics[width=\maxwidth]{/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/price_chart16} 
+
+\end{knitrout}
+
+
+\end{fullwidth}
+\end{document}

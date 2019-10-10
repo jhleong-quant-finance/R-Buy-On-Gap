@@ -1,0 +1,9 @@
+Rscript --verbose BuyOnGap_sim_sp500.R >& log/BuyOnGap_sim_sp500.log;
+Rscript --verbose BuyOnGap_sim_sp400.R >& log/BuyOnGap_sim_sp400.log;
+Rscript --verbose BuyOnGap_sim_2day.R >& log/BuyOnGap_sim_2day.log;
+Rscript --verbose BuyOnGap_sim_r2k_2day.R >& log/BuyOnGap_sim_r2k_2day.log;
+Rscript --verbose BuyOnGap_sim_r2k_APYBT_2day.R >& log/BuyOnGap_sim_r2k_APYBT_2day.log;
+Rscript --verbose BuyOnGap_sim_r2k_3day.R >& log/BuyOnGap_sim_r2k_3day.log;
+Rscript --verbose BuyOnGap_sim_r2k_4day.R >& log/BuyOnGap_sim_r2k_4day.log;
+Rscript --verbose BuyOnGap_sim_r2k_2013.R >& log/BuyOnGap_sim_r2k_2013.log;
+Rscript --verbose BuyOnGap_sim_r2k.R >& log/BuyOnGap_sim_r2k.log;

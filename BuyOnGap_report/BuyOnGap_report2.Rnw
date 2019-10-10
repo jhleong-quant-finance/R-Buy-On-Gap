@@ -1,0 +1,161 @@
+\documentclass{tufte-handout}
+
+%\documentclass{article}
+\usepackage{graphicx}
+%\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+% Prints a trailing space in a smart way.
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\newcommand{\tthdump}[1]{#1}
+\usepackage{makeidx}
+\usepackage{tabularx}
+
+%\makeindex
+
+<<R-code-from-BuyOnGap_check, echo=FALSE,message=FALSE>>=
+#############################################################################
+#
+#    Buy On Gap Trading checking
+#    
+#    TODO: The open order is not taking into account after it close on the next day.
+#          A DB is needed to keep track the portofolio.
+#
+#############################################################################
+library('quantmod', quietly=T);
+library(xtable, quietly=T);
+source("/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/BuyOnGap_report_proc.R");
+@
+
+\title{Buy On Gap trading report - S\&P 500}
+
+<<make_date,echo=FALSE,results='asis'>>=
+
+cat('\\date{',format(as.Date(trading_date_str, format="%Y%m%d"),'%d %b %Y'),'}');
+@
+
+
+\begin{document}
+\maketitle
+
+%\SweaveOpts{concordance=TRUE}
+%\setkeys{Gin}{width=1.1\marginparwidth} %% Sweave
+
+\section{Trade execution}
+\subsection{Order executed}
+
+<<trading_executed, echo = FALSE , results='asis'>>=
+trade_summary_sp500 <- trade_summary_sp500[,c(1:8,10)]
+tbl <- xtable(trade_summary_sp500, digits=2);
+align(tbl) <- "llrrrrrrr|r";
+print(tbl)
+
+@
+
+\subsection{Stock Portfolio}
+<<portolio, echo=FALSE,results='asis'>>=
+
+if(NROW(asset_sp500) > 0){
+  tbl <- xtable(asset_sp500, digits=2);
+  align(tbl) <- "llrrr";
+  print(tbl)
+  
+}else {
+  cat('No stock hold in the portfolio at the end of the day.')
+}
+@
+
+\section{Trading Matrix}
+
+
+<<trading_matrix, results='asis', echo=FALSE>>=
+tbl_caption <- 'The commissions and daily returns are calculated based on the closed position.\nThe open position is present in the portofolio and assume closing on the next open market.\nPortofolio amount is the open order with today closing price.';
+
+tradingMat_tbl <- xtable(trade_stat_sp500, digits=2, caption=tbl_caption);
+print(tradingMat_tbl, include.rownames=FALSE,include.colnames=FALSE,floating=T,hline.after=c(0,nrow(tradingMat_tbl)),latex.environments=NULL);
+
+@
+
+% \section{Trade Slippage}
+% 
+% <<slippage, echo = FALSE , results='asis'>>=
+% 
+% colnames(slippage) <- c('Symbol','Open Slippage %', 'Close Slippage %');
+% print(xtable(slippage),floating=FALSE,);
+% @
+
+
+\title{Buy On Gap trading report - S\&P 600}
+\maketitle
+
+\section{Trade execution}
+\subsection{Order executed}
+
+
+<<trading_executed_sp600, echo = FALSE , results='asis'>>=
+trade_summary_sp600 <- trade_summary_sp600[,c(1:8,10)]
+tbl <- xtable(trade_summary_sp600, digits=2);
+align(tbl) <- "llrrrrrrr|r";
+print(tbl)
+@
+
+\subsection{Stock Portfolio}
+<<portolio_sp600, echo=FALSE,results='asis'>>=
+
+if(NROW(asset_sp600) > 0){
+  tbl <- xtable(asset_sp600, digits=2);
+  align(tbl) <- "llrrr";
+  print(tbl)
+  
+}else {
+  cat('No stock hold in the portfolio at the end of the day.')
+}
+@
+
+\section{Trading Matrix}
+
+<<trading_matrix_sp600, results='asis', echo=FALSE>>=
+tbl_caption <- 'The commissions and daily returns are calculated based on the closed position.\nThe open position is present in the portofolio and assume closing on the next open market.\nPortofolio amount is the open order with today closing price.';
+
+tradingMat_tbl <- xtable(trade_stat_sp600, digits=2, caption=tbl_caption);
+print(tradingMat_tbl, include.rownames=FALSE,include.colnames=FALSE,floating=T,hline.after=c(0,nrow(tradingMat_tbl)),latex.environments=NULL);
+@
+
+% \section{Trade Slippage}
+% 
+% <<slippage_sp600, echo = FALSE , results='asis'>>=
+% 
+% colnames(slippage) <- c('Symbol','Open Slippage %', 'Close Slippage %');
+% print(xtable(slippage),floating=FALSE,);
+% @
+
+\newpage
+\section{News}
+
+%\begin{margintable}
+
+<<news,echo =FALSE , results='asis',message=FALSE,warning=FALSE>>=
+for(i in 1:NROW(google_news))
+{  
+  news_tbl <- xtable(google_news[[i]]);
+  align(news_tbl) <- "rX";
+ print(news_tbl, tabular.environment="tabularx",width="\\textwidth", include.rownames=TRUE,floating=FALSE);
+}
+
+@
+%\end{margintable}
+
+\newpage
+\section{Individual contract}
+\begin{fullwidth}
+<<price_chart,echo=FALSE,fig.align='default',fig.path='/home/jhleong/dev/R/buy_on_gap/BuyOnGap_report/figure/',message=FALSE,warning=FALSE>>=
+for(i in 1:NROW(traded_sym_list))
+{  
+#   #generate chart  
+  chartSeries(IB_FullDayPrice[[i]],name=traded_sym_list[i],
+                              theme=chartTheme('white'), up.col='dark green',dn.col='red');
+}
+@
+
+\end{fullwidth}
+\end{document}

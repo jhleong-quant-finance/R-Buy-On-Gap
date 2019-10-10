@@ -1,0 +1,240 @@
+\documentclass{tufte-handout}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+%\documentclass{article}
+\usepackage{graphicx}
+%\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+% Prints a trailing space in a smart way.
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\newcommand{\tthdump}[1]{#1}
+\usepackage{makeidx}
+\usepackage{tabularx}
+
+%\makeindex
+
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{verbatim}
+## failed to load HTTP resource
+\end{verbatim}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: 1: failed to load HTTP resource}}\end{kframe}
+\end{knitrout}
+
+
+\title{Buy On Gap trading report - S\&P 500}
+
+\date{ 25 Dec 2013 }
+
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+
+\begin{document}
+\maketitle
+
+%\SweaveOpts{concordance=TRUE}
+%\setkeys{Gin}{width=1.1\marginparwidth} %% Sweave
+
+\section{Trade execution}
+\subsection{Order executed}
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Dec 26 05:10:09 2013
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrrrrrrr|r}
+  \hline
+ & Symbol & B.AvgPrc & B.Qty & S.AvgPrc & S.Qty & Profit & Comm. & Return \% & Closing Price \\ 
+  \hline
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Stock Portfolio}
+No stock hold in the portfolio at the end of the day.
+
+
+\section{Trading Matrix}
+
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Dec 26 05:10:09 2013
+\begin{table}[ht]
+\begin{tabular}{lr}
+   \hline
+Portofolio Amount: &  \\ 
+  Asset Amount: &  \\ 
+  Bought Amount: &  \\ 
+  Sold   Amount: &  \\ 
+  Commission   : &  \\ 
+  P/L incl Comm: &  \\ 
+  Ret incl Comm \%: &  \\ 
+  S\&P 500 Ret \%: &  \\ 
+   \hline
+\end{tabular}
+\caption{The commissions and daily returns are calculated based on the closed position.
+The open position is present in the portofolio and assume closing on the next open market.
+Portofolio amount is the open order with today closing price.} 
+\end{table}
+
+
+
+% \section{Trade Slippage}
+% 
+% <<slippage, echo = FALSE , results='asis'>>=
+% 
+% colnames(slippage) <- c('Symbol','Open Slippage %', 'Close Slippage %');
+% print(xtable(slippage),floating=FALSE,);
+% @
+
+
+\title{Buy On Gap trading report - S\&P 600}
+\maketitle
+
+\section{Trade execution}
+\subsection{Order executed}
+
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Dec 26 05:10:09 2013
+\begin{table}[ht]
+\centering
+\begin{tabular}{llrrrrrrr|r}
+  \hline
+ & Symbol & B.AvgPrc & B.Qty & S.AvgPrc & S.Qty & Profit & Comm. & Return \% & Closing Price \\ 
+  \hline
+\hline
+\end{tabular}
+\end{table}
+
+
+
+\subsection{Stock Portfolio}
+No stock hold in the portfolio at the end of the day.
+
+
+\section{Trading Matrix}
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Dec 26 05:10:09 2013
+\begin{table}[ht]
+\begin{tabular}{lr}
+   \hline
+Portofolio Amount: &  \\ 
+  Asset Amount: &  \\ 
+  Bought Amount: &  \\ 
+  Sold   Amount: &  \\ 
+  Commission   : &  \\ 
+  P/L incl Comm: &  \\ 
+  Ret incl Comm \%: &  \\ 
+  S\&P 600 Ret \%: &  \\ 
+   \hline
+\end{tabular}
+\caption{The commissions and daily returns are calculated based on the closed position.
+The open position is present in the portofolio and assume closing on the next open market.
+Portofolio amount is the open order with today closing price.} 
+\end{table}
+
+
+
+% \section{Trade Slippage}
+% 
+% <<slippage_sp600, echo = FALSE , results='asis'>>=
+% 
+% colnames(slippage) <- c('Symbol','Open Slippage %', 'Close Slippage %');
+% print(xtable(slippage),floating=FALSE,);
+% @
+
+\newpage
+\section{News}
+
+%\begin{margintable}
+
+% latex table generated in R 3.0.2 by xtable 1.7-1 package
+% Thu Dec 26 05:10:09 2013
+\begin{tabularx}{\textwidth}{rX}
+  \hline
+ & NA \\ 
+  \hline
+1 &  MONTREAL, Dec. 4, 2013 /CNW Telbec/ - The National Bank of Canada (the "Bank") announces today its intention to redeem all of its remaining issued and outstanding Non-Cumulative 5-Year Rate Reset First Preferred Shares Series 24 (the "Preferred ...  \\ 
+  2 &  National Bank of Canada's CEO Discusses Q4 2013 Results - Earnings Call ...  -  Seeking Alpha National Bank releases its fourth quarter and 2013 results  -  Wall Street Journal \\ 
+  3 &  Dec 4 (Reuters) - National Bank of Canada, the country's sixth-largest lender, announced a 2-for-1 stock split and raised its dividend after reporting a 4 percent fall in fourth-quarter profit.  \\ 
+  4 &  National Bank of Canada unveiled shareholder-friendly moves Wednesday in the form of a dividend hike and stock split, and said its fourth-quarter profit slipped 4\%.  \\ 
+  5 &  National Bank of Canada logo Research analysts at Barclays boosted their price objective on shares of National Bank of Canada (TSE:NA) from C\$91.00 to C\$94.00 in a report released on Thursday, Analyst Ratings.Net reports. The firm currently has an ...  \\ 
+  6 &  National Bank of Canada has opened books on a five-year euro covered bond at mid-swaps plus 13bp area on Tuesday, offering both rates and credit investors a rare opportunity to buy Canadian bank paper.  \\ 
+  7 &  MONTREAL, Dec. 16, 2013 /CNW Telbec/ - On December 1, National Bank Direct Brokerage (NBDB) adjusted its fee structure to make it among the most competitive in the Canadian direct brokerage industry. The new general fee schedule caps annual ...  \\ 
+  8 &  TORONTO, Dec. 17, 2013 /CNW Telbec/ - National Bank Financial Inc. ("National Bank Financial") and Sun Life Assurance Company of Canada ("Sun Life Assurance"), a wholly owned subsidiary of Sun Life Financial Inc., are pleased to announce the ...  \\ 
+  9 &  National Bank named best Canadian mobile banking provider  -  Bobsguide (press release) National Bank Named the Best Mobile Banking Service Provider in Canada  -  Marketwired (press release) \\ 
+  10 &  National Bank of Canada logo National Bank of Canada (TSE:NA) announced a dividend on Tuesday, December 3rd, AmericanBankingNews.  \\ 
+   \hline
+\end{tabularx}
+
+
+%\end{margintable}
+
+\newpage
+\section{Individual contract}
+\begin{fullwidth}
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+
+
+{\ttfamily\noindent\bfseries\color{errorcolor}{\#\# Error: subscript out of bounds}}\end{kframe}
+\end{knitrout}
+
+
+\end{fullwidth}
+\end{document}

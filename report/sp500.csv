@@ -1,0 +1,83 @@
+> load(file='/home/jhleong/dev/R/buy_on_gap/result_Rdata/nStockTradeVec_SD_sp500.Rdata' );
+> print_AnnualizedReturns(nStockTradeVec_SD_sp500)
+YEAR  2003 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return              12.42       7.24       5.23        5.06        4.48        4.31   0.26
+Annualized Std Dev              0.78       0.44       0.39        0.39        0.38        0.38   0.17
+Annualized Sharpe (Rf=0%)      15.95      16.43      13.36       13.12       11.78       11.33   1.55
+YEAR  2004 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               1.76       1.67       1.51        1.47        1.29        1.17   0.09
+Annualized Std Dev              0.60       0.31       0.25        0.24        0.23        0.23   0.11
+Annualized Sharpe (Rf=0%)       2.94       5.44       6.04        6.09        5.54        5.06   0.81
+YEAR  2005 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               0.65       1.21       1.13        1.14        1.13        1.12   0.03
+Annualized Std Dev              0.46       0.24       0.21        0.21        0.20        0.20   0.10
+Annualized Sharpe (Rf=0%)       1.44       4.95       5.36        5.46        5.57        5.49   0.29
+YEAR  2006 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               2.10       2.63       2.41        2.29        2.17        2.10   0.14
+Annualized Std Dev              0.48       0.25       0.21        0.20        0.20        0.19   0.10
+Annualized Sharpe (Rf=0%)       4.36      10.69      11.76       11.31       11.14       10.95   1.36
+YEAR  2007 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               1.61       5.50       6.29        5.79        4.87        4.26   0.04
+Annualized Std Dev              0.70       0.29       0.24        0.23        0.22        0.21   0.16
+Annualized Sharpe (Rf=0%)       2.28      18.98      26.05       24.88       22.48       20.37   0.22
+YEAR  2008 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return              -0.47       2.05       1.78        1.62        1.23        0.99  -0.38
+Annualized Std Dev              1.63       0.76       0.66        0.64        0.60        0.58   0.41
+Annualized Sharpe (Rf=0%)      -0.29       2.71       2.72        2.52        2.04        1.70  -0.94
+YEAR  2009 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               1.08       3.78       3.58        3.71        3.16        3.02   0.23
+Annualized Std Dev              0.84       0.57       0.52        0.51        0.48        0.48   0.27
+Annualized Sharpe (Rf=0%)       1.29       6.59       6.92        7.29        6.52        6.32   0.86
+YEAR  2010 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               2.57       1.01       1.22        1.21        1.14        1.14   0.13
+Annualized Std Dev              0.53       0.32       0.29        0.28        0.28        0.27   0.18
+Annualized Sharpe (Rf=0%)       4.82       3.15       4.26        4.27        4.11        4.24   0.71
+YEAR  2011 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return              -0.15       0.44       0.30        0.29        0.24        0.18   0.00
+Annualized Std Dev              0.60       0.33       0.31        0.30        0.30        0.29   0.23
+Annualized Sharpe (Rf=0%)      -0.25       1.33       0.98        0.96        0.82        0.62   0.00
+YEAR  2012 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Annualized Return               0.26       0.63       0.98        1.02        1.06        1.03   0.14
+Annualized Std Dev              0.54       0.25       0.21        0.20        0.20        0.20   0.13
+Annualized Sharpe (Rf=0%)       0.48       2.52       4.78        5.04        5.36        5.23   1.06
+> print_maxDD(nStockTradeVec_SD_sp500)
+YEAR  2003 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.28       0.22       0.17        0.16        0.15        0.15   0.14
+YEAR  2004 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.31       0.25       0.21        0.19        0.19         0.2   0.08
+YEAR  2005 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.34       0.13       0.12        0.12        0.11        0.11   0.07
+YEAR  2006 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.35       0.11       0.08        0.09        0.08        0.08   0.08
+YEAR  2007 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.56       0.16        0.1         0.1         0.1         0.1    0.1
+YEAR  2008 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown        0.8       0.36       0.31        0.32         0.3        0.33   0.49
+YEAR  2009 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.39       0.24       0.24        0.25        0.24        0.24   0.28
+YEAR  2010 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.19       0.12        0.1         0.1         0.1        0.11   0.16
+YEAR  2011 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.61       0.32       0.27        0.26        0.25        0.24   0.19
+YEAR  2012 
+               BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.60 S.P500
+Worst Drawdown       0.51       0.21       0.15        0.14        0.13        0.12    0.1

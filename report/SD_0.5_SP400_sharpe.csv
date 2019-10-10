@@ -1,0 +1,51 @@
+
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2003']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               1.10       2.53       2.24       2.12       2.02        2.03        2.07        2.07        2.07
+Annualized Std Dev              0.51       0.34       0.26       0.25       0.23        0.23        0.23        0.23        0.23
+Annualized Sharpe (Rf=0%)       2.17       7.37       8.57       8.64       8.75        8.91        9.16        9.19        9.19
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2004']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               2.05       3.51       3.53       3.59       3.44        3.42        3.29        3.26        3.26
+Annualized Std Dev              0.65       0.40       0.34       0.32       0.31        0.31        0.31        0.31        0.31
+Annualized Sharpe (Rf=0%)       3.16       8.67      10.50      11.10      11.07       11.07       10.75       10.66       10.66
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2005']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               2.97       2.15       2.16       2.12       2.02        2.01        1.92        1.91        1.91
+Annualized Std Dev              0.58       0.37       0.27       0.27       0.26        0.25        0.25        0.25        0.25
+Annualized Sharpe (Rf=0%)       5.17       5.81       7.88       7.96       7.90        7.93        7.65        7.62        7.61
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2006']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               4.04       2.44       2.21       2.17       2.31        2.32        2.21        2.14        2.14
+Annualized Std Dev              0.51       0.38       0.29       0.28       0.26        0.25        0.25        0.25        0.25
+Annualized Sharpe (Rf=0%)       7.94       6.47       7.52       7.86       8.98        9.15        8.80        8.55        8.58
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2007']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               3.40       5.03       4.07       3.79       3.21        3.09        2.92        2.76        2.70
+Annualized Std Dev              0.59       0.40       0.29       0.28       0.27        0.26        0.26        0.26        0.26
+Annualized Sharpe (Rf=0%)       5.71      12.73      13.98      13.60      12.02       11.71       11.20       10.62       10.38
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2008']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return              31.14      24.12      18.43      18.51      16.03       15.53       13.28       11.99       11.50
+Annualized Std Dev              1.02       0.72       0.65       0.62       0.60        0.60        0.57        0.56        0.56
+Annualized Sharpe (Rf=0%)      30.59      33.41      28.55      29.92      26.85       26.01       23.23       21.49       20.71
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2009']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               0.64       4.14       3.78       4.13       3.75        3.66        3.37        3.34        3.33
+Annualized Std Dev              0.88       0.62       0.54       0.53       0.51        0.51        0.50        0.50        0.50
+Annualized Sharpe (Rf=0%)       0.72       6.71       7.05       7.75       7.30        7.20        6.70        6.66        6.62
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2010']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               1.32       0.68       0.57       0.59       0.59        0.61        0.64        0.65        0.64
+Annualized Std Dev              0.52       0.40       0.34       0.33       0.33        0.33        0.32        0.32        0.32
+Annualized Sharpe (Rf=0%)       2.54       1.67       1.70       1.78       1.80        1.86        1.96        2.01        1.99
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2011']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               1.50       1.21       1.06       1.12       1.01        0.99        0.89        0.81        0.78
+Annualized Std Dev              0.66       0.47       0.40       0.38       0.37        0.37        0.37        0.37        0.37
+Annualized Sharpe (Rf=0%)       2.28       2.59       2.68       2.92       2.70        2.65        2.41        2.19        2.14
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_sp400[['0']][['0.5']]))['2012']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60
+Annualized Return               2.42       3.08       2.20       2.34       2.41        2.45        2.37        2.36        2.35
+Annualized Std Dev              0.66       0.47       0.40       0.39       0.38        0.37        0.37        0.37        0.37
+Annualized Sharpe (Rf=0%)       3.66       6.55       5.55       6.08       6.41        6.54        6.40        6.38        6.35

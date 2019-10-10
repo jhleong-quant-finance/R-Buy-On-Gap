@@ -1,0 +1,51 @@
+> print_AnnualizedReturns(nStockTradeVec_SD_r2k_APYBT_2day)
+YEAR  2003 
+                            BuyOnGap.1  BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return         1.640670e+11 20022107.19  322957.31   103614.59      512.85        0.45
+Annualized Std Dev        4.510000e+00        1.44       0.86        0.75        0.49        0.19
+Annualized Sharpe (Rf=0%) 3.640804e+10 13894717.58  374248.99   138197.87     1037.67        2.40
+YEAR  2004 
+                           BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return         14219685.91  129071.53   10697.68     6265.30      166.90        0.17
+Annualized Std Dev               2.69       0.98       0.61        0.52        0.29        0.18
+Annualized Sharpe (Rf=0%)  5282635.60  131587.84   17561.49    11963.39      569.16        0.95
+YEAR  2005 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return           16923.13    2973.20     663.48      444.52       28.90        0.03
+Annualized Std Dev              2.87       0.94       0.58        0.51        0.28        0.16
+Annualized Sharpe (Rf=0%)    5890.64    3176.99    1139.96      869.98      104.29        0.21
+YEAR  2006 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return           15628.01    1420.61     294.60      196.67       18.83        0.17
+Annualized Std Dev              1.96       0.79       0.50        0.44        0.27        0.17
+Annualized Sharpe (Rf=0%)    7982.79    1797.61     591.87      444.82       68.70        0.98
+YEAR  2007 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return             189.93      58.91      50.44       37.97       11.82       -0.03
+Annualized Std Dev              2.12       0.75       0.50        0.43        0.27        0.20
+Annualized Sharpe (Rf=0%)      89.40      78.74     100.47       88.93       44.17       -0.14
+YEAR  2008 
+                           BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return         90095726.16  3596056.5   88756.81    31165.44      612.44       -0.35
+Annualized Std Dev               8.31        2.5       1.50        1.28        0.83        0.46
+Annualized Sharpe (Rf=0%) 10839744.95  1436142.9   59230.19    24358.17      740.36       -0.75
+YEAR  2009 
+                            BuyOnGap.1   BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return         1.000046e+13 178590538.47 1251451.56   376733.00     3313.07        0.25
+Annualized Std Dev        1.156000e+01         3.45       1.87        1.57        0.81        0.36
+Annualized Sharpe (Rf=0%) 8.647395e+11  51801151.20  668728.55   240485.00     4086.49        0.70
+YEAR  2010 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return           13737.35    1379.20     290.86      191.71       51.81        0.25
+Annualized Std Dev              7.23       1.92       1.04        0.88        0.60        0.25
+Annualized Sharpe (Rf=0%)    1899.62     717.30     278.34      218.00       86.31        1.01
+YEAR  2011 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return             495.76     125.01      52.65       37.17       17.68       -0.05
+Annualized Std Dev              4.20       1.24       0.75        0.65        0.48        0.33
+Annualized Sharpe (Rf=0%)     117.90     100.74      70.04       57.59       36.71       -0.16
+YEAR  2012 
+                          BuyOnGap.1 BuyOnGap.4 BuyOnGap.8 BuyOnGap.10 BuyOnGap.60 Russell2000
+Annualized Return              10.23      16.47      11.11       11.78        8.97        0.15
+Annualized Std Dev              1.62       0.72       0.53        0.48        0.41        0.17
+Annualized Sharpe (Rf=0%)       6.32      22.78      20.78       24.60       22.06        0.86

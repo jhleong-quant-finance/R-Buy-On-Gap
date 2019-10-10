@@ -1,0 +1,50 @@
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2003']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.53       0.49       0.45       0.44       0.43        0.41        0.42        0.42        0.42   0.22
+Annualized Std Dev              0.17       0.15       0.12       0.12       0.11        0.11        0.11        0.11        0.11   0.17
+Annualized Sharpe (Rf=0%)       3.05       3.28       3.79       3.75       3.87        3.77        3.87        3.86        3.86   1.34
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2004']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.66       0.60       0.53       0.49       0.44        0.46        0.41        0.39        0.38   0.09
+Annualized Std Dev              0.19       0.13       0.12       0.11       0.10        0.10        0.10        0.10        0.10   0.11
+Annualized Sharpe (Rf=0%)       3.53       4.55       4.52       4.46       4.31        4.50        4.13        3.93        3.87   0.81
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2005']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.32       0.34       0.41       0.40       0.42        0.41        0.40        0.39        0.38   0.03
+Annualized Std Dev              0.20       0.15       0.13       0.13       0.13        0.12        0.12        0.12        0.12   0.10
+Annualized Sharpe (Rf=0%)       1.59       2.36       3.12       3.16       3.39        3.31        3.18        3.13        3.12   0.29
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2006']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.45       0.52       0.44       0.44       0.45        0.46        0.48        0.48        0.48   0.14
+Annualized Std Dev              0.22       0.15       0.12       0.12       0.11        0.11        0.11        0.11        0.11   0.10
+Annualized Sharpe (Rf=0%)       2.04       3.43       3.59       3.67       3.96        4.12        4.49        4.50        4.51   1.36
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2007']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               1.34       1.11       0.93       0.83       0.76        0.72        0.65        0.62        0.60   0.04
+Annualized Std Dev              0.22       0.17       0.14       0.14       0.13        0.13        0.13        0.12        0.12   0.16
+Annualized Sharpe (Rf=0%)       5.99       6.71       6.41       5.74       5.66        5.42        5.13        5.02        4.93   0.22
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2008']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               1.53       1.12       1.03       1.02       0.88        0.84        0.73        0.69        0.68  -0.38
+Annualized Std Dev              0.38       0.31       0.29       0.27       0.25        0.25        0.24        0.23        0.23   0.41
+Annualized Sharpe (Rf=0%)       4.01       3.64       3.54       3.71       3.58        3.36        3.01        3.01        3.01  -0.94
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2009']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.77       0.79       0.68       0.79       0.76        0.71        0.62        0.59        0.59   0.23
+Annualized Std Dev              0.34       0.30       0.22       0.24       0.22        0.22        0.19        0.19        0.18   0.27
+Annualized Sharpe (Rf=0%)       2.26       2.62       3.02       3.26       3.42        3.28        3.23        3.18        3.21   0.86
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2010']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.28       0.29       0.18       0.15       0.18        0.18        0.17        0.17        0.17   0.13
+Annualized Std Dev              0.17       0.15       0.14       0.14       0.13        0.12        0.12        0.12        0.12   0.18
+Annualized Sharpe (Rf=0%)       1.68       1.96       1.26       1.08       1.37        1.46        1.40        1.43        1.42   0.71
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2011']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.23       0.26       0.26       0.26       0.28        0.27        0.24        0.24        0.23   0.00
+Annualized Std Dev              0.19       0.17       0.16       0.16       0.16        0.15        0.15        0.14        0.14   0.23
+Annualized Sharpe (Rf=0%)       1.21       1.60       1.58       1.62       1.81        1.78        1.67        1.68        1.66   0.00
+> round(table.AnnualizedReturns((nStockTradeVec_SD_skip5[['0.5']])['2012']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.26       0.34       0.29       0.32       0.29        0.30        0.27        0.27        0.27   0.14
+Annualized Std Dev              0.17       0.13       0.10       0.10       0.09        0.09        0.09        0.09        0.09   0.13
+Annualized Sharpe (Rf=0%)       1.51       2.69       2.88       3.25       3.11        3.16        2.89        3.01        3.04   1.06

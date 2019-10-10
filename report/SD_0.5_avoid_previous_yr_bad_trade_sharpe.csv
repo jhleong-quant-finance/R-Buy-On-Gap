@@ -1,0 +1,50 @@
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2003']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               7.14       9.90       7.30       5.93       5.81        5.59        5.12        5.02        5.00   0.26
+Annualized Std Dev              0.75       0.54       0.44       0.42       0.40        0.40        0.39        0.39        0.39   0.17
+Annualized Sharpe (Rf=0%)       9.56      18.20      16.47      14.14      14.55       14.16       13.17       12.92       12.87   1.55
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2004']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               2.27       1.45       1.40       1.48       1.47        1.48        1.36        1.29        1.27   0.09
+Annualized Std Dev              0.52       0.35       0.27       0.25       0.22        0.21        0.20        0.20        0.20   0.11
+Annualized Sharpe (Rf=0%)       4.33       4.11       5.23       5.98       6.69        6.95        6.67        6.37        6.29   0.81
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2005']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.70       1.65       1.20       1.15       1.33        1.39        1.39        1.38        1.38   0.03
+Annualized Std Dev              0.46       0.31       0.24       0.22       0.21        0.20        0.20        0.20        0.20   0.10
+Annualized Sharpe (Rf=0%)       1.53       5.36       4.99       5.14       6.36        6.78        6.91        6.84        6.83   0.29
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2006']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               2.94       3.36       3.34       3.22       3.06        2.95        2.89        2.88        2.89   0.14
+Annualized Std Dev              0.44       0.33       0.25       0.23       0.21        0.20        0.20        0.20        0.20   0.10
+Annualized Sharpe (Rf=0%)       6.64      10.19      13.35      13.86      14.57       14.44       14.60       14.64       14.70   1.36
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2007']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               1.57       2.78       4.84       5.21       4.80        4.55        4.03        3.79        3.73   0.04
+Annualized Std Dev              0.66       0.41       0.28       0.26       0.24        0.23        0.22        0.22        0.22   0.16
+Annualized Sharpe (Rf=0%)       2.38       6.78      17.15      19.70      20.19       19.69       18.37       17.50       17.28   0.22
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2008']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               3.54       8.45       6.25       5.49       5.01        5.06        4.08        3.76        3.73  -0.38
+Annualized Std Dev              1.48       0.96       0.66       0.61       0.57        0.56        0.53        0.52        0.52   0.41
+Annualized Sharpe (Rf=0%)       2.39       8.83       9.41       8.98       8.86        9.08        7.66        7.23        7.20  -0.94
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2009']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               1.94       3.77       3.12       3.49       3.77        3.85        3.61        3.37        3.38   0.23
+Annualized Std Dev              0.76       0.60       0.53       0.51       0.46        0.46        0.44        0.43        0.43   0.27
+Annualized Sharpe (Rf=0%)       2.57       6.28       5.84       6.85       8.19        8.43        8.23        7.85        7.89   0.86
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2010']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               2.33       1.83       1.91       1.93       1.98        1.91        1.95        1.93        1.92   0.13
+Annualized Std Dev              0.46       0.37       0.32       0.31       0.29        0.29        0.28        0.28        0.28   0.18
+Annualized Sharpe (Rf=0%)       5.09       4.98       5.99       6.32       6.75        6.56        6.87        6.83        6.81   0.71
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2011']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.34       0.32       0.76       0.66       0.65        0.63        0.58        0.52        0.50   0.00
+Annualized Std Dev              0.51       0.36       0.31       0.30       0.29        0.29        0.29        0.28        0.28   0.23
+Annualized Sharpe (Rf=0%)       0.67       0.88       2.44       2.18       2.19        2.15        2.02        1.84        1.80   0.00
+> round(table.AnnualizedReturns(as.xts((nStockTradeVec_SD_avoid_previous_yr_bad_trade[['0']][['0.5']]))['2012']), digits=2)
+                          BuyOnGap.1 BuyOnGap.2 BuyOnGap.4 BuyOnGap.5 BuyOnGap.8 BuyOnGap.10 BuyOnGap.20 BuyOnGap.40 BuyOnGap.60 S.P500
+Annualized Return               0.25       0.43       0.82       0.85       0.97        0.78        0.93        0.91        0.92   0.14
+Annualized Std Dev              0.48       0.32       0.24       0.21       0.20        0.19        0.19        0.19        0.19   0.13
+Annualized Sharpe (Rf=0%)       0.52       1.32       3.48       4.00       4.78        4.02        4.80        4.78        4.96   1.06
